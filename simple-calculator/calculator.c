@@ -8,7 +8,7 @@
 int main(void)
 {
 	int choice = 1;
-	int a, b;
+	double a, b;
 
 	while (choice != 0)
 	{
@@ -27,26 +27,41 @@ int main(void)
 		if (choice == 1)
 		{
 			printf("A: ");
-			scanf("%d", &a);
+			scanf("%lf", &a);
 			printf("B: ");
-			scanf("%d", &b);
-			printf("Result: %d\n", a + b);
+			scanf("%lf", &b);
+			printf("Result: %g\n", a + b);
 		}
 		if (choice == 2)
 		{
 			printf("A: ");
-			scanf("%d", &a);
+			scanf("%lf", &a);
 			printf("B: ");
-			scanf("%d", &b);
-			printf("Result: %d\n", a - b);
+			scanf("%lf", &b);
+			printf("Result: %g\n", a - b);
 		}
 		if (choice == 3)
 		{
 			printf("A: ");
-			scanf("%d", &a);
+			scanf("%lf", &a);
 			printf("B: ");
-			scanf("%d", &b);
-			printf("Result: %d\n", a * b);
+			scanf("%lf", &b);
+			printf("Result: %g\n", a * b);
+		}
+		if (choice == 4)
+		{
+			printf("A: ");
+			scanf("%lf", &a);
+			printf("B: ");
+			scanf("%lf", &b);
+			if (b == 0)
+			{
+				printf("Error: division by zero\n");
+			}
+			else
+			{
+				printf("Result: %g\n", a / b);
+			}
 		}
 	}
 	printf("Bye!\n");
