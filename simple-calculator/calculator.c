@@ -40,7 +40,14 @@ int main(void)
 			scanf("%d", &b);
 			printf("Result: %d\n", a - b);
 		}
-		
+		if (choice == 3)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+			printf("B: ");
+			scanf("%d", &b);
+			printf("Result: %d\n", a * b);
+		}
 	}
 	printf("Bye!\n");
 	return (0);
